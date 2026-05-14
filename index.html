@@ -22,10 +22,21 @@
       h1 {
         font-size: 3rem;
       }
+      .anim {
+        animation: fade 3500ms cubic-bezier(0.6, 0, 0.5, 1) infinite alternate;
+      }
+      @keyframes fade {
+        0%, 30% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
     </style>
   </head>
 
   <body>
-    <h1>837732.xyz</h1>
+    <h1 class="anim">837732.xyz</h1>
   </body>
 </html>
